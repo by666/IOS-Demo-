@@ -1,0 +1,16 @@
+PODS:
+  - NIMSDK (5.4.0)
+
+DEPENDENCIES:
+  - NIMSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - NIMSDK
+
+SPEC CHECKSUMS:
+  NIMSDK: b96577d4f892a606e644eeba55837ab5cf5de071
+
+PODFILE CHECKSUM: 4c089bd7abc5f58661bb6c713a5d31bfa04a741b
+
+COCOAPODS: 1.5.0

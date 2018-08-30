@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000EB4D9213677FB00184DF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4D8213677FB00184DF1 /* AppDelegate.m */; };
+		000EB4DC213677FB00184DF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4DB213677FB00184DF1 /* ViewController.m */; };
+		000EB4DF213677FB00184DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4DD213677FB00184DF1 /* Main.storyboard */; };
+		000EB4E12136780100184DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4E02136780100184DF1 /* Assets.xcassets */; };
+		000EB4E42136780100184DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4E22136780100184DF1 /* LaunchScreen.storyboard */; };
+		000EB4E72136780100184DF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4E62136780100184DF1 /* main.m */; };
+		000EB4EF2137C7E300184DF1 /* NTESGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4EE2137C7E200184DF1 /* NTESGLView.m */; };
+		000EB5172137C86500184DF1 /* color.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4F22137C86500184DF1 /* color.c */; };
+		000EB5182137C86500184DF1 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4F32137C86500184DF1 /* common.c */; };
+		000EB5192137C86500184DF1 /* rgb.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4F52137C86500184DF1 /* rgb.fsh.c */; };
+		000EB51A2137C86500184DF1 /* yuv420p.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4F62137C86500184DF1 /* yuv420p.fsh.c */; };
+		000EB51B2137C86500184DF1 /* yuv420sp.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4F72137C86500184DF1 /* yuv420sp.fsh.c */; };
+		000EB51C2137C86500184DF1 /* yuv444p10le.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4F82137C86500184DF1 /* yuv444p10le.fsh.c */; };
+		000EB51D2137C86500184DF1 /* renderer.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4FA2137C86500184DF1 /* renderer.c */; };
+		000EB51E2137C86500184DF1 /* renderer_rgb.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4FB2137C86500184DF1 /* renderer_rgb.c */; };
+		000EB51F2137C86500184DF1 /* renderer_yuv420p.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4FC2137C86500184DF1 /* renderer_yuv420p.c */; };
+		000EB5202137C86500184DF1 /* renderer_yuv420sp.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4FD2137C86500184DF1 /* renderer_yuv420sp.c */; };
+		000EB5212137C86500184DF1 /* renderer_yuv444p10le.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4FE2137C86500184DF1 /* renderer_yuv444p10le.c */; };
+		000EB5222137C86500184DF1 /* shader.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4FF2137C86500184DF1 /* shader.c */; };
+		000EB5232137C86500184DF1 /* mvp.vsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB5012137C86500184DF1 /* mvp.vsh.c */; };
+		000EB5242137C86500184DF1 /* ijksdl_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 000EB50E2137C86500184DF1 /* ijksdl_timer.c */; };
+		000EB5252137C86500184DF1 /* IJKSDLGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EB5162137C86500184DF1 /* IJKSDLGLView.m */; };
+		C7126DB3245F122B1255CD83 /* libPods-wangyi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E73AA574EFDA5FB4A7BD9F5E /* libPods-wangyi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000EB4D4213677FB00184DF1 /* wangyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wangyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000EB4D7213677FB00184DF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		000EB4D8213677FB00184DF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		000EB4DA213677FB00184DF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		000EB4DB213677FB00184DF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		000EB4DE213677FB00184DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		000EB4E02136780100184DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000EB4E32136780100184DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		000EB4E52136780100184DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000EB4E62136780100184DF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		000EB4ED2137C7E200184DF1 /* NTESGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESGLView.h; sourceTree = "<group>"; };
+		000EB4EE2137C7E200184DF1 /* NTESGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESGLView.m; sourceTree = "<group>"; };
+		000EB4F22137C86500184DF1 /* color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = color.c; sourceTree = "<group>"; };
+		000EB4F32137C86500184DF1 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		000EB4F52137C86500184DF1 /* rgb.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rgb.fsh.c; sourceTree = "<group>"; };
+		000EB4F62137C86500184DF1 /* yuv420p.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420p.fsh.c; sourceTree = "<group>"; };
+		000EB4F72137C86500184DF1 /* yuv420sp.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420sp.fsh.c; sourceTree = "<group>"; };
+		000EB4F82137C86500184DF1 /* yuv444p10le.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv444p10le.fsh.c; sourceTree = "<group>"; };
+		000EB4F92137C86500184DF1 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		000EB4FA2137C86500184DF1 /* renderer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer.c; sourceTree = "<group>"; };
+		000EB4FB2137C86500184DF1 /* renderer_rgb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_rgb.c; sourceTree = "<group>"; };
+		000EB4FC2137C86500184DF1 /* renderer_yuv420p.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420p.c; sourceTree = "<group>"; };
+		000EB4FD2137C86500184DF1 /* renderer_yuv420sp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420sp.c; sourceTree = "<group>"; };
+		000EB4FE2137C86500184DF1 /* renderer_yuv444p10le.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv444p10le.c; sourceTree = "<group>"; };
+		000EB4FF2137C86500184DF1 /* shader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shader.c; sourceTree = "<group>"; };
+		000EB5012137C86500184DF1 /* mvp.vsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mvp.vsh.c; sourceTree = "<group>"; };
+		000EB5022137C86500184DF1 /* ijksdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl.h; sourceTree = "<group>"; };
+		000EB5032137C86500184DF1 /* ijksdl_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_class.h; sourceTree = "<group>"; };
+		000EB5042137C86500184DF1 /* ijksdl_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_endian.h; sourceTree = "<group>"; };
+		000EB5052137C86500184DF1 /* ijksdl_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_error.h; sourceTree = "<group>"; };
+		000EB5062137C86500184DF1 /* ijksdl_fourcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_fourcc.h; sourceTree = "<group>"; };
+		000EB5072137C86500184DF1 /* ijksdl_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_gles2.h; sourceTree = "<group>"; };
+		000EB5082137C86500184DF1 /* ijksdl_inc_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_inc_internal.h; sourceTree = "<group>"; };
+		000EB5092137C86500184DF1 /* ijksdl_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_log.h; sourceTree = "<group>"; };
+		000EB50A2137C86500184DF1 /* ijksdl_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_misc.h; sourceTree = "<group>"; };
+		000EB50B2137C86500184DF1 /* ijksdl_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_mutex.h; sourceTree = "<group>"; };
+		000EB50C2137C86500184DF1 /* ijksdl_stdinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_stdinc.h; sourceTree = "<group>"; };
+		000EB50D2137C86500184DF1 /* ijksdl_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_thread.h; sourceTree = "<group>"; };
+		000EB50E2137C86500184DF1 /* ijksdl_timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_timer.c; sourceTree = "<group>"; };
+		000EB50F2137C86500184DF1 /* ijksdl_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_timer.h; sourceTree = "<group>"; };
+		000EB5102137C86500184DF1 /* ijksdl_video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_video.h; sourceTree = "<group>"; };
+		000EB5112137C86500184DF1 /* ijksdl_vout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout.h; sourceTree = "<group>"; };
+		000EB5132137C86500184DF1 /* ijksdl_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_ios.h; sourceTree = "<group>"; };
+		000EB5142137C86500184DF1 /* ijksdl_vout_overlay_videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_overlay_videotoolbox.h; sourceTree = "<group>"; };
+		000EB5152137C86500184DF1 /* IJKSDLGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLGLView.h; sourceTree = "<group>"; };
+		000EB5162137C86500184DF1 /* IJKSDLGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLGLView.m; sourceTree = "<group>"; };
+		86B45474855ABC4DF47006AC /* Pods-wangyi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wangyi.release.xcconfig"; path = "Pods/Target Support Files/Pods-wangyi/Pods-wangyi.release.xcconfig"; sourceTree = "<group>"; };
+		9A4CBBECB94DB4ABD11FD5E8 /* Pods-wangyi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wangyi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wangyi/Pods-wangyi.debug.xcconfig"; sourceTree = "<group>"; };
+		E73AA574EFDA5FB4A7BD9F5E /* libPods-wangyi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wangyi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000EB4D1213677FB00184DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7126DB3245F122B1255CD83 /* libPods-wangyi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000EB4CB213677FB00184DF1 = {
+			isa = PBXGroup;
+			children = (
+				000EB4D6213677FB00184DF1 /* wangyi */,
+				000EB4D5213677FB00184DF1 /* Products */,
+				34DE34EBEC35E2A61C7E69D9 /* Pods */,
+				AE7F97481898153A03FEDF3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		000EB4D5213677FB00184DF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000EB4D4213677FB00184DF1 /* wangyi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000EB4D6213677FB00184DF1 /* wangyi */ = {
+			isa = PBXGroup;
+			children = (
+				000EB4F02137C86500184DF1 /* ijksdl */,
+				000EB4ED2137C7E200184DF1 /* NTESGLView.h */,
+				000EB4EE2137C7E200184DF1 /* NTESGLView.m */,
+				000EB4D7213677FB00184DF1 /* AppDelegate.h */,
+				000EB4D8213677FB00184DF1 /* AppDelegate.m */,
+				000EB4DA213677FB00184DF1 /* ViewController.h */,
+				000EB4DB213677FB00184DF1 /* ViewController.m */,
+				000EB4DD213677FB00184DF1 /* Main.storyboard */,
+				000EB4E02136780100184DF1 /* Assets.xcassets */,
+				000EB4E22136780100184DF1 /* LaunchScreen.storyboard */,
+				000EB4E52136780100184DF1 /* Info.plist */,
+				000EB4E62136780100184DF1 /* main.m */,
+			);
+			path = wangyi;
+			sourceTree = "<group>";
+		};
+		000EB4F02137C86500184DF1 /* ijksdl */ = {
+			isa = PBXGroup;
+			children = (
+				000EB4F12137C86500184DF1 /* gles2 */,
+				000EB5022137C86500184DF1 /* ijksdl.h */,
+				000EB5032137C86500184DF1 /* ijksdl_class.h */,
+				000EB5042137C86500184DF1 /* ijksdl_endian.h */,
+				000EB5052137C86500184DF1 /* ijksdl_error.h */,
+				000EB5062137C86500184DF1 /* ijksdl_fourcc.h */,
+				000EB5072137C86500184DF1 /* ijksdl_gles2.h */,
+				000EB5082137C86500184DF1 /* ijksdl_inc_internal.h */,
+				000EB5092137C86500184DF1 /* ijksdl_log.h */,
+				000EB50A2137C86500184DF1 /* ijksdl_misc.h */,
+				000EB50B2137C86500184DF1 /* ijksdl_mutex.h */,
+				000EB50C2137C86500184DF1 /* ijksdl_stdinc.h */,
+				000EB50D2137C86500184DF1 /* ijksdl_thread.h */,
+				000EB50E2137C86500184DF1 /* ijksdl_timer.c */,
+				000EB50F2137C86500184DF1 /* ijksdl_timer.h */,
+				000EB5102137C86500184DF1 /* ijksdl_video.h */,
+				000EB5112137C86500184DF1 /* ijksdl_vout.h */,
+				000EB5122137C86500184DF1 /* ios */,
+			);
+			path = ijksdl;
+			sourceTree = "<group>";
+		};
+		000EB4F12137C86500184DF1 /* gles2 */ = {
+			isa = PBXGroup;
+			children = (
+				000EB4F22137C86500184DF1 /* color.c */,
+				000EB4F32137C86500184DF1 /* common.c */,
+				000EB4F42137C86500184DF1 /* fsh */,
+				000EB4F92137C86500184DF1 /* internal.h */,
+				000EB4FA2137C86500184DF1 /* renderer.c */,
+				000EB4FB2137C86500184DF1 /* renderer_rgb.c */,
+				000EB4FC2137C86500184DF1 /* renderer_yuv420p.c */,
+				000EB4FD2137C86500184DF1 /* renderer_yuv420sp.c */,
+				000EB4FE2137C86500184DF1 /* renderer_yuv444p10le.c */,
+				000EB4FF2137C86500184DF1 /* shader.c */,
+				000EB5002137C86500184DF1 /* vsh */,
+			);
+			path = gles2;
+			sourceTree = "<group>";
+		};
+		000EB4F42137C86500184DF1 /* fsh */ = {
+			isa = PBXGroup;
+			children = (
+				000EB4F52137C86500184DF1 /* rgb.fsh.c */,
+				000EB4F62137C86500184DF1 /* yuv420p.fsh.c */,
+				000EB4F72137C86500184DF1 /* yuv420sp.fsh.c */,
+				000EB4F82137C86500184DF1 /* yuv444p10le.fsh.c */,
+			);
+			path = fsh;
+			sourceTree = "<group>";
+		};
+		000EB5002137C86500184DF1 /* vsh */ = {
+			isa = PBXGroup;
+			children = (
+				000EB5012137C86500184DF1 /* mvp.vsh.c */,
+			);
+			path = vsh;
+			sourceTree = "<group>";
+		};
+		000EB5122137C86500184DF1 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				000EB5132137C86500184DF1 /* ijksdl_ios.h */,
+				000EB5142137C86500184DF1 /* ijksdl_vout_overlay_videotoolbox.h */,
+				000EB5152137C86500184DF1 /* IJKSDLGLView.h */,
+				000EB5162137C86500184DF1 /* IJKSDLGLView.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		34DE34EBEC35E2A61C7E69D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A4CBBECB94DB4ABD11FD5E8 /* Pods-wangyi.debug.xcconfig */,
+				86B45474855ABC4DF47006AC /* Pods-wangyi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE7F97481898153A03FEDF3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E73AA574EFDA5FB4A7BD9F5E /* libPods-wangyi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000EB4D3213677FB00184DF1 /* wangyi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000EB4EA2136780100184DF1 /* Build configuration list for PBXNativeTarget "wangyi" */;
+			buildPhases = (
+				ABDC95AA6752AB49BEBD0B30 /* [CP] Check Pods Manifest.lock */,
+				000EB4D0213677FB00184DF1 /* Sources */,
+				000EB4D1213677FB00184DF1 /* Frameworks */,
+				000EB4D2213677FB00184DF1 /* Resources */,
+				B5B6CAC9133B461F0614048A /* [CP] Embed Pods Frameworks */,
+				53603FB74E654FD4A035BD60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wangyi;
+			productName = wangyi;
+			productReference = 000EB4D4213677FB00184DF1 /* wangyi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000EB4CC213677FB00184DF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "黄成实";
+				TargetAttributes = {
+					000EB4D3213677FB00184DF1 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 000EB4CF213677FB00184DF1 /* Build configuration list for PBXProject "wangyi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000EB4CB213677FB00184DF1;
+			productRefGroup = 000EB4D5213677FB00184DF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000EB4D3213677FB00184DF1 /* wangyi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000EB4D2213677FB00184DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000EB4E42136780100184DF1 /* LaunchScreen.storyboard in Resources */,
+				000EB4E12136780100184DF1 /* Assets.xcassets in Resources */,
+				000EB4DF213677FB00184DF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53603FB74E654FD4A035BD60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wangyi/Pods-wangyi-resources.sh",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NMCVideoFilter.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wangyi/Pods-wangyi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDC95AA6752AB49BEBD0B30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wangyi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B6CAC9133B461F0614048A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wangyi/Pods-wangyi-frameworks.sh",
+				"${PODS_ROOT}/NIMSDK/NIMSDK/NIMSDK.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NIMAVChat.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NVS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMAVChat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wangyi/Pods-wangyi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000EB4D0213677FB00184DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000EB5222137C86500184DF1 /* shader.c in Sources */,
+				000EB5182137C86500184DF1 /* common.c in Sources */,
+				000EB5232137C86500184DF1 /* mvp.vsh.c in Sources */,
+				000EB4DC213677FB00184DF1 /* ViewController.m in Sources */,
+				000EB4E72136780100184DF1 /* main.m in Sources */,
+				000EB51B2137C86500184DF1 /* yuv420sp.fsh.c in Sources */,
+				000EB5242137C86500184DF1 /* ijksdl_timer.c in Sources */,
+				000EB4D9213677FB00184DF1 /* AppDelegate.m in Sources */,
+				000EB4EF2137C7E300184DF1 /* NTESGLView.m in Sources */,
+				000EB51D2137C86500184DF1 /* renderer.c in Sources */,
+				000EB5202137C86500184DF1 /* renderer_yuv420sp.c in Sources */,
+				000EB5192137C86500184DF1 /* rgb.fsh.c in Sources */,
+				000EB51E2137C86500184DF1 /* renderer_rgb.c in Sources */,
+				000EB5252137C86500184DF1 /* IJKSDLGLView.m in Sources */,
+				000EB5172137C86500184DF1 /* color.c in Sources */,
+				000EB5212137C86500184DF1 /* renderer_yuv444p10le.c in Sources */,
+				000EB51F2137C86500184DF1 /* renderer_yuv420p.c in Sources */,
+				000EB51A2137C86500184DF1 /* yuv420p.fsh.c in Sources */,
+				000EB51C2137C86500184DF1 /* yuv444p10le.fsh.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		000EB4DD213677FB00184DF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000EB4DE213677FB00184DF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		000EB4E22136780100184DF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000EB4E32136780100184DF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000EB4E82136780100184DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		000EB4E92136780100184DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000EB4EB2136780100184DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A4CBBECB94DB4ABD11FD5E8 /* Pods-wangyi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AB86U4DT8H;
+				INFOPLIST_FILE = wangyi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sthl.zhj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000EB4EC2136780100184DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B45474855ABC4DF47006AC /* Pods-wangyi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AB86U4DT8H;
+				INFOPLIST_FILE = wangyi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sthl.zhj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000EB4CF213677FB00184DF1 /* Build configuration list for PBXProject "wangyi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000EB4E82136780100184DF1 /* Debug */,
+				000EB4E92136780100184DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000EB4EA2136780100184DF1 /* Build configuration list for PBXNativeTarget "wangyi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000EB4EB2136780100184DF1 /* Debug */,
+				000EB4EC2136780100184DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000EB4CC213677FB00184DF1 /* Project object */;
+}
